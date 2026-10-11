@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Uzum Market | Kirish</title>
+
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <a href="index.html" class="back-home">← Bosh sahifaga</a>
+
+    <main class="auth-container">
+
+        <section class="auth-visual">
+            <a href="index.html" class="logo">
+                uzum<span>market</span>
+            </a>
+
+            <div class="visual-content">
+                <span class="small-label">XARIDLARNING YANGI OLAMI</span>
+
+                <h1>
+                    Yaxshi tanlov.
+                    <span>Yaxshi kayfiyat.</span>
+                </h1>
+
+                <p>
+                    Hisobingizga kiring va o‘zingizga
+                    yoqqan mahsulotlarni kashf eting.
+                </p>
+
+                <div class="floating-items">
+                    <div class="float-card card-one">📱</div>
+                    <div class="float-card card-two">👟</div>
+                    <div class="float-card card-three">🎧</div>
+                </div>
+            </div>
+
+            <p class="visual-footer">
+                Xarid qilish endi yanada qulay.
+            </p>
+        </section>
+
+        <section class="auth-form-section">
+            <div class="auth-card">
+
+                <div class="mobile-logo">
+                    uzum<span>market</span>
+                </div>
+
+                <div class="form-heading">
+                    <span class="form-icon">✦</span>
+                    <h2 id="formTitle">Xush kelibsiz!</h2>
+                    <p id="formDescription">
+                        Hisobingizga kirish uchun ma’lumotlaringizni kiriting.
+                    </p>
+                </div>
+
+                <div class="form-tabs">
+                    <button type="button" class="tab active" id="loginTab">
+                        Kirish
+                    </button>
+
+                    <button type="button" class="tab" id="registerTab">
+                        Ro‘yxatdan o‘tish
+                    </button>
+                </div>
+
+                <form id="authForm">
+
+                    <div class="field" id="nameField" hidden>
+                        <label for="fullName">Ismingiz</label>
+                        <input
+                            type="text"
+                            id="fullName"
+                            placeholder="Ism va familiyangiz"
+                            autocomplete="name"
+                        >
+                    </div>
+
+                    <div class="field">
+                        <label for="phone">Telefon raqami</label>
+
+                        <div class="phone-input">
+                            <span>🇺🇿 +998</span>
+                            <input
+                                type="tel"
+                                id="phone"
+                                placeholder="90 123 45 67"
+                                inputmode="numeric"
+                                maxlength="12"
+                                autocomplete="tel-national"
+                                required
+                            >
+                        </div>
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Parol</label>
+
+                        <div class="password-input">
+                            <input
+                                type="password"
+                                id="password"
+                                placeholder="Parolingizni kiriting"
+                                minlength="8"
+                                autocomplete="current-password"
+                                required
+                            >
+
+                            <button
+                                type="button"
+                                id="togglePassword"
+                                aria-label="Parolni ko‘rsatish"
+                            >◉</button>
+                        </div>
+                    </div>
+
+                    <div class="form-options">
+                        <label class="remember">
+                            <input type="checkbox" id="remember">
+                            <span>Meni eslab qol</span>
+                        </label>
+
+                        <button type="button" id="forgotPassword">
+                            Parolni unutdingizmi?
+                        </button>
+                    </div>
+
+                    <button type="submit" class="submit-btn" id="submitBtn">
+                        Hisobga kirish <span>→</span>
+                    </button>
+
+                    <p class="form-message" id="formMessage" role="status"></p>
+
+                    <p class="terms">
+                        Davom etish orqali foydalanish shartlariga
+                        rozilik bildirasiz.
+                    </p>
+
+                </form>
+
+                <div class="form-bottom">
+                    <span>Yordam kerakmi?</span>
+                    <a href="index.html">Bosh sahifaga qaytish</a>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <script src="login.js"></script>
+</body>
+</html>

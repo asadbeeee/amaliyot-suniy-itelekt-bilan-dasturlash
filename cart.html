@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savat | Uzum Market</title>
+    <link rel="stylesheet" href="cart.css">
+    <script src="cart.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="index.html" class="logo">uzum<span>market</span></a>
+        <a href="index.html" class="back">← Xaridni davom ettirish</a>
+    </header>
+
+    <main class="container">
+        <h1>Mening savatim 🛒</h1>
+        <p class="subtitle">Tanlagan mahsulotlaringiz</p>
+
+        <div class="layout">
+            <section class="cart-items" id="cartItems"></section>
+
+            <aside class="summary">
+                <h2>Buyurtma</h2>
+
+                <div class="summary-row">
+                    <span>Mahsulotlar</span>
+                    <span id="itemsCount">0 ta</span>
+                </div>
+
+                <div class="summary-row">
+                    <span>Yetkazib berish</span>
+                    <span class="free">Bepul</span>
+                </div>
+
+                <hr>
+
+                <div class="total-row">
+                    <span>Jami:</span>
+                    <span id="totalPrice">0 so‘m</span>
+                </div>
+
+                <button id="checkoutBtn" class="checkout">
+                    Buyurtma berish →
+                </button>
+
+                <p class="safe">🔒 Qulay va xavfsiz xarid</p>
+                <p id="checkoutMessage"></p>
+            </aside>
+        </div>
+    </main>
+
+</body>
+</html>
